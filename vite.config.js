@@ -5,6 +5,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
+    base: '',  // <-- importante, para rutas relativas
     plugins: [
         laravel({
             input: ["resources/css/app.css", "resources/js/app.jsx"],
