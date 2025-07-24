@@ -1,0 +1,15 @@
+meta {
+  name: delete hospital
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{uri_path}}/api/hospital/1
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

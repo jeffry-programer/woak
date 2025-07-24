@@ -1,0 +1,27 @@
+meta {
+  name: create hospital
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{uri_path}}/api/hospital
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "hospital_code": "1223",
+    "hospital_name": "test",
+    "description": "nada",
+    "general_details": "algo",
+    "location": "av test",
+    "latitude": "100.200",
+    "longitude": "-20.0033"
+  }
+}

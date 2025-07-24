@@ -1,0 +1,21 @@
+meta {
+  name: get all hospital
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{uri_path}}/api/hospital/?user_id=2
+  body: none
+  auth: bearer
+}
+
+params:query {
+  user_id: 2
+  ~name: test
+  ~code: 123
+}
+
+auth:bearer {
+  token: {{token}}
+}

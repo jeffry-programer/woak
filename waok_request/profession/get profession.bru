@@ -1,0 +1,19 @@
+meta {
+  name: get profession
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{uri_path}}/api/profession?category_profession=apoyo
+  body: none
+  auth: bearer
+}
+
+params:query {
+  category_profession: apoyo
+}
+
+auth:bearer {
+  token: {{token}}
+}

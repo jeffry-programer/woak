@@ -1,0 +1,15 @@
+meta {
+  name: get categories professions
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{uri_path}}/api/profession/categories
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

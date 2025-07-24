@@ -1,0 +1,15 @@
+meta {
+  name: get one hospital user
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{uri_path}}/api/hospitalUser/2
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

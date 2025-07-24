@@ -1,0 +1,28 @@
+meta {
+  name: update hospital
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{uri_path}}/api/hospital/1
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "hospital_code": "321",
+    "hospital_name": "test 2",
+    "description": "nada 2",
+    "general_details": "algo 2",
+    "location": "av test 2",
+    "latitude": "100.2002",
+    "longitude": "-20.00332",
+    "status": false
+  }
+}

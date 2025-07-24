@@ -1,0 +1,21 @@
+meta {
+  name: get units
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{uri_path}}/api/unit
+  body: none
+  auth: bearer
+}
+
+params:query {
+  ~services: [2]
+  ~service_id: 1
+  ~hospital_id: 8
+}
+
+auth:bearer {
+  token: {{token}}
+}

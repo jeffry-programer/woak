@@ -1,0 +1,21 @@
+meta {
+  name: update hospital user
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{uri_path}}/api/hospitalUser/3
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "status": true
+  }
+}

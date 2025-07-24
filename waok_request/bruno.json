@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "waok_request",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Create user with user hospital
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{uri_path}}/api/hospitalUser/with-user
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "hospital_id": 1,
+    "user_id": 1,
+    "type_user": "owner",
+    "profession_id": 1,
+    "status": true,
+    "name": "Alexander",
+    "email": "123aa3e",
+    "password": "1234ABCD"
+  }
+}
